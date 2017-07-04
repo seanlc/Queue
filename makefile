@@ -1,7 +1,7 @@
 CC= g++
 CFLAGS= -ggdb -std=c++11 -Wall
 
-main: Queue.h.gch
+main: Queue.h.gch main.cpp
 	$(CC) $(CFLAGS) main.cpp -o main
 Queue.h.gch: Queue.h
 	$(CC) $(CFLAGS) Queue.h
